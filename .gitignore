@@ -1,0 +1,28 @@
+# Ignorar arquivos de compilação e saída
+bin/
+obj/
+
+# Ignorar arquivos de configuração do Visual Studio
+.vscode/
+.vs/
+
+# Ignorar arquivos de dependência do NuGet
+packages/
+*.nupkg
+
+# Ignorar arquivos de log e cache
+[Ll]og/
+[Tt]est[Rr]esult*/
+*.[Pp]ublish.xml
+*.[Pp]db
+*.[Bb]ak
+*.[Cc]ache
+*.dbmdl
+
+# Ignorar arquivos de configuração específicos do usuário
+*.suo
+*.user
+*.sln.docstates
+
+# Ignorar arquivos de configuração do Rider (IDE JetBrains)
+.idea/
