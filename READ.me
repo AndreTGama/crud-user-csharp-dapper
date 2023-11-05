@@ -1,0 +1,36 @@
+# Configurando um Projeto C# com .NET e MySQL usando Dapper
+
+## Introdução
+Este guia descreve os passos necessários para criar um projeto C# usando o .NET Framework, MySQL e a biblioteca Dapper. O projeto aborda operações CRUD para um modelo de usuário. Ele é baseado em aulas da FIAP e da Alura.
+
+## Pré-requisitos
+- Visual Studio ou Visual Studio Code instalado.
+- Conhecimento básico de C#.
+
+## Passo 1: Configuração do Projeto
+1. Crie um novo projeto no Visual Studio.
+2. Escolha o tipo de projeto "Aplicação Web ASP.NET Core".
+3. Selecione "API" como o tipo de aplicação.
+
+## Passo 2: Configuração do Banco de Dados
+1. Instale o MySQL Server em seu sistema ou use um serviço de banco de dados MySQL.
+2. Crie um banco de dados para o projeto.
+
+## Passo 3: Instalação do Dapper e MySQLConnector
+1. No Visual Studio, abra o arquivo do projeto (.csproj) e adicione as seguintes dependências:
+
+```markdown
+<ItemGroup>
+  <PackageReference Include="Dapper" Version="2.0.78" />
+  <PackageReference Include="MySqlConnector" Version="1.3.7" />
+</ItemGroup>
+```
+
+## Passo 4: Configuração da Conexão com o Banco de Dados
+No arquivo appsettings.json, adicione a configuração do banco de dados:
+
+```markdown
+"ConnectionStrings": {
+  "DefaultConnection": "Server=localhost;Port=3306;Database=NomeDoSeuBanco;User=SeuUsuario;Password=SuaSenha;"
+}
+```
